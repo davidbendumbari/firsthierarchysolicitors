@@ -3,17 +3,21 @@ import { RevealSection, RevealItem } from "@/hooks/useScrollReveal";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, Users, Target, Heart } from "lucide-react";
+import nafisatImg from "@/assets/nafisat.png";
+import clintonImg from "@/assets/clinton.png";
 
 const team = [
   {
     name: "Nafisat Abubakar",
     role: "Founder & Managing Partner",
+    image: nafisatImg,
     bio: "Nafisat Abubakar is the visionary founder of 1ST Hierarchy Solicitors. With over a decade of experience in corporate and commercial law, she has established herself as a trusted advisor to leading businesses across Nigeria. Her expertise spans corporate governance, regulatory compliance, and complex commercial transactions. Nafisat holds an LL.B from the University of Abuja and a B.L. from the Nigerian Law School. She is a member of the Nigerian Bar Association and the International Bar Association.",
     specializations: ["Corporate Governance", "Regulatory Compliance", "Commercial Transactions", "Business Formation"],
   },
   {
     name: "Clinton Biragbara",
     role: "Partner",
+    image: clintonImg,
     bio: "Clinton Biragbara brings exceptional depth in litigation, dispute resolution, and mergers & acquisitions. Known for his strategic thinking and meticulous approach, Clinton has successfully represented clients in high-value commercial disputes and complex M&A transactions. He holds an LL.B and LL.M and is admitted to practice in multiple Nigerian courts. His practice combines sharp advocacy with sound commercial judgment.",
     specializations: ["Mergers & Acquisitions", "Dispute Resolution", "Commercial Litigation", "Contract Negotiation"],
   },
@@ -78,9 +82,11 @@ const AboutPage = () => (
             {team.map((member, i) => (
               <RevealItem key={member.name} delay={i * 200}>
                 <div className="bg-card border border-border rounded-lg p-8 lg:p-10 group hover:border-gold/30 transition-all duration-500">
-                  <div className="w-20 h-20 gradient-gold rounded-full flex items-center justify-center font-serif text-2xl font-bold text-primary-foreground mb-6">
-                    {member.name.split(" ").map(n => n[0]).join("")}
-                  </div>
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-28 h-28 rounded-full object-cover border-2 border-gold/30 mb-6"
+                  />
                   <h3 className="font-serif text-2xl font-bold group-hover:text-gold transition-colors">{member.name}</h3>
                   <p className="text-gold text-sm mt-1">{member.role}</p>
                   <p className="text-muted-foreground text-sm leading-relaxed mt-4">{member.bio}</p>
