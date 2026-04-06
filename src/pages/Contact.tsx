@@ -45,8 +45,8 @@ const ContactPage = () => {
                   </p>
                 </RevealItem>
                 {[
-                  { icon: MapPin, label: "Office Address", value: "Abuja, Federal Capital Territory, Nigeria" },
-                  { icon: Phone, label: "Phone", value: "+234 (0) 900 000 0000" },
+                  { icon: MapPin, label: "Office Address", value: "No. 3 T. O. S. Benson Crescent, Off Ngozi Okonjo-Iweala Way, Utako, Abuja, FCT, Nigeria" },
+                  { icon: Phone, label: "Phone", value: "+234 806 366 7172" },
                   { icon: Mail, label: "Email", value: "info@1sthierarchy.com" },
                   { icon: Clock, label: "Office Hours", value: "Mon – Fri: 9:00 AM – 6:00 PM" },
                 ].map((item, i) => (
