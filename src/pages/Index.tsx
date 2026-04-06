@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { RevealSection, RevealItem } from "@/hooks/useScrollReveal";
 import { Scale, FileText, Building2, ShieldCheck, Gavel, Briefcase, ArrowRight, Quote } from "lucide-react";
-import heroImage from "@/assets/hero-abuja.jpg";
+import heroImage from "@/assets/hero-abuja.webp";
 
 const services = [
   { icon: Building2, title: "Corporate & Commercial Law", desc: "Comprehensive legal frameworks for business formation, governance, and commercial transactions.", path: "/services/corporate-commercial" },
