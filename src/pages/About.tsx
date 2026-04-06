@@ -82,9 +82,11 @@ const AboutPage = () => (
             {team.map((member, i) => (
               <RevealItem key={member.name} delay={i * 200}>
                 <div className="bg-card border border-border rounded-lg p-8 lg:p-10 group hover:border-gold/30 transition-all duration-500">
-                  <div className="w-20 h-20 gradient-gold rounded-full flex items-center justify-center font-serif text-2xl font-bold text-primary-foreground mb-6">
-                    {member.name.split(" ").map(n => n[0]).join("")}
-                  </div>
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-28 h-28 rounded-full object-cover border-2 border-gold/30 mb-6"
+                  />
                   <h3 className="font-serif text-2xl font-bold group-hover:text-gold transition-colors">{member.name}</h3>
                   <p className="text-gold text-sm mt-1">{member.role}</p>
                   <p className="text-muted-foreground text-sm leading-relaxed mt-4">{member.bio}</p>
