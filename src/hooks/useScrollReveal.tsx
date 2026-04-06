@@ -1,54 +1,42 @@
 import { useEffect, useRef, ReactNode } from "react";
 
-const useScrollReveal = () => {
+export const RevealSection = ({ children, className = "" }: { children: ReactNode; className?: string }) => {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const items = el.querySelectorAll(".reveal-item");
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("revealed");
+            (entry.target as HTMLElement).style.opacity = "1";
+            (entry.target as HTMLElement).style.transform = "translateY(0)";
             observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+      { threshold: 0.05, rootMargin: "0px 0px -30px 0px" }
     );
 
-    const el = ref.current;
-    if (el) {
-      const children = el.querySelectorAll(".reveal-item");
-      children.forEach((child) => observer.observe(child));
-    }
-
+    items.forEach((item) => observer.observe(item));
     return () => observer.disconnect();
   }, []);
 
-  return ref;
-};
-
-export const RevealSection = ({ children, className = "" }: { children: ReactNode; className?: string }) => {
-  const ref = useScrollReveal();
-  return (
-    <div ref={ref} className={className}>
-      {children}
-    </div>
-  );
+  return <div ref={ref} className={className}>{children}</div>;
 };
 
 export const RevealItem = ({ children, className = "", delay = 0 }: { children: ReactNode; className?: string; delay?: number }) => (
   <div
-    className={`reveal-item opacity-0 translate-y-8 transition-all duration-700 ease-out ${className}`}
-    style={{ transitionDelay: `${delay}ms` }}
+    className={`reveal-item ${className}`}
+    style={{
+      opacity: 0,
+      transform: "translateY(30px)",
+      transition: `opacity 0.7s ease-out ${delay}ms, transform 0.7s ease-out ${delay}ms`,
+    }}
   >
     {children}
   </div>
 );
-
-// Add CSS for revealed state
-const style = document.createElement("style");
-style.textContent = `.revealed .reveal-item { opacity: 1 !important; transform: translateY(0) !important; }`;
-document.head.appendChild(style);
-
-export default useScrollReveal;
