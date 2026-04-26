@@ -23,12 +23,12 @@ const Footer = () => (
         <div>
           <h4 className="font-serif text-sm font-semibold text-foreground uppercase tracking-wider mb-4">Practice Areas</h4>
           <div className="flex flex-col gap-2">
-            <Link to="/services/corporate-commercial" className="text-sm text-muted-foreground hover:text-gold transition-colors">Corporate & Commercial Law</Link>
-            <Link to="/services/contracts" className="text-sm text-muted-foreground hover:text-gold transition-colors">Contract Drafting</Link>
-            <Link to="/services/mergers-acquisitions" className="text-sm text-muted-foreground hover:text-gold transition-colors">Mergers & Acquisitions</Link>
-            <Link to="/services/compliance" className="text-sm text-muted-foreground hover:text-gold transition-colors">Regulatory Compliance</Link>
-            <Link to="/services/dispute-resolution" className="text-sm text-muted-foreground hover:text-gold transition-colors">Dispute Resolution</Link>
-            <Link to="/services/legal-advisory" className="text-sm text-muted-foreground hover:text-gold transition-colors">Legal Advisory</Link>
+            <Link to="/services/corporate" className="text-sm text-muted-foreground hover:text-gold transition-colors">Corporate</Link>
+            <Link to="/services/commercial" className="text-sm text-muted-foreground hover:text-gold transition-colors">Commercial</Link>
+            <Link to="/services/energy-construction" className="text-sm text-muted-foreground hover:text-gold transition-colors">Energy, Construction & Engineering</Link>
+            <Link to="/services/property" className="text-sm text-muted-foreground hover:text-gold transition-colors">Property</Link>
+            <Link to="/services/adr" className="text-sm text-muted-foreground hover:text-gold transition-colors">Alternative Dispute Resolution</Link>
+            <Link to="/services/taxation" className="text-sm text-muted-foreground hover:text-gold transition-colors">Taxation</Link>
           </div>
         </div>
 
@@ -48,13 +48,16 @@ const Footer = () => (
               <MapPin size={16} className="text-gold mt-0.5 shrink-0" />
               <span className="text-sm text-muted-foreground">No. 3 T. O. S. Benson Crescent, Off Ngozi Okonjo-Iweala Way, Utako, Abuja, FCT, Nigeria</span>
             </div>
-            <div className="flex items-center gap-3">
-              <Phone size={16} className="text-gold shrink-0" />
-              <span className="text-sm text-muted-foreground"><span className="text-sm text-muted-foreground">+234 703 620 7801</span></span>
+            <div className="flex items-start gap-3">
+              <Phone size={16} className="text-gold mt-0.5 shrink-0" />
+              <div className="flex flex-col gap-1">
+                <a href="tel:+2347036207801" className="text-sm text-muted-foreground hover:text-gold transition-colors">+234 703 620 7801</a>
+                <a href="tel:+2348036003580" className="text-sm text-muted-foreground hover:text-gold transition-colors">+234 803 600 3580</a>
+              </div>
             </div>
             <div className="flex items-center gap-3">
               <Mail size={16} className="text-gold shrink-0" />
-              <span className="text-sm text-muted-foreground">info@1sthierarchy.com</span>
+              <a href="mailto:legal@1sthierarchy.com" className="text-sm text-muted-foreground hover:text-gold transition-colors">legal@1sthierarchy.com</a>
             </div>
           </div>
         </div>
