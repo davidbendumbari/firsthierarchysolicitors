@@ -58,7 +58,7 @@ const Index = () => (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
             {[
               { num: "Since 2011", label: "Serving Nigerian Businesses" },
-              { num: "₦7B+", label: "Raised on Client Transactions" },
+              { num: "10+", label: "Industry Sectors" },
               { num: "Multi-Sector", label: "Public, Energy, ICT, Finance & More" },
             ].map((stat, i) => (
               <RevealItem key={stat.label} delay={i * 150}>
@@ -132,7 +132,7 @@ const Index = () => (
         <div className="absolute top-0 right-0 w-96 h-96 gradient-gold rounded-full blur-3xl" />
       </div>
       <div className="container mx-auto px-6 text-center relative z-10">
-        <h2 className="font-serif text-3xl lg:text-5xl font-bold">Ready to Elevate Your Legal Strategy?</h2>
+        <h2 className="font-serif text-3xl lg:text-5xl font-bold">Let Us Help</h2>
         <p className="text-muted-foreground text-lg mt-6 max-w-2xl mx-auto">
           Partner with 1ST Hierarchy Solicitors and experience the confidence that comes with world-class legal representation.
         </p>
