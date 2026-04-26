@@ -24,7 +24,7 @@ const serviceData: Record<string, ServiceData> = {
     intro: "Our Corporate practice partners with boards, executives, and shareholders to structure, govern, and grow Nigerian businesses. From acquisitions and mergers to capital raising and statutory compliance, we deliver advice grounded in deep regulatory experience and informed by our role as Company Secretary to several Nigerian companies.",
     features: [
       { title: "Acquisitions & Mergers", desc: "Strategic counsel on M&A transactions, including the 100% acquisition of First Bank Nigeria Mortgages and the FBN/TrustBond merger that established First-Trust Mortgage Bank PLC." },
-      { title: "Capital Raising", desc: "Solicitor experience on capital market, private equity, debt, and sukuk transactions — contributing to over ₦7 billion raised for clients." },
+      { title: "Capital Raising", desc: "Solicitor experience on capital market, private equity, debt, and sukuk transactions, contributing to over ₦7 billion raised for clients." },
       { title: "Corporate Governance & Secretarial", desc: "Board advisory, shareholder agreements, statutory filings, and full company secretarial support for listed and private companies." },
       { title: "Statutory & Regulatory Interface", desc: "Engagement with CAC, SEC, FCCPC and sector regulators on behalf of clients across financial services, energy, ICT, and construction." },
     ],
@@ -41,9 +41,9 @@ const serviceData: Record<string, ServiceData> = {
     metaTitle: "Commercial Lawyers in Abuja | 1ST Hierarchy Solicitors",
     metaDesc: "Legal drafting, commercial contracts, statutory registrations, procurement support and regulatory advisory in Abuja, Nigeria.",
     headline: "Commercial Counsel That Powers Day-to-Day Business",
-    intro: "Our Commercial team handles the legal infrastructure that lets your business operate smoothly — from contracts and registrations to procurement support and regulatory advisory. We work as an extension of your team, focused on practical, enforceable outcomes.",
+    intro: "Our Commercial team handles the legal infrastructure that lets your business operate smoothly, from contracts and registrations to procurement support and regulatory advisory. We work as an extension of your team, focused on practical, enforceable outcomes.",
     features: [
-      { title: "Legal Drafting & Contracts", desc: "Bespoke drafting and full lifecycle management of commercial contracts — supply, services, distribution, joint ventures, and more." },
+      { title: "Legal Drafting & Contracts", desc: "Bespoke drafting and full lifecycle management of commercial contracts, including supply, services, distribution, joint ventures, and more." },
       { title: "Company & Instrument Registration", desc: "Corporate and company registration with CAC, plus registration of legal instruments and statutory filings." },
       { title: "Licenses & Statutory Registrations", desc: "Securing and maintaining sector licenses and statutory registrations across regulated industries." },
       { title: "Procurement, Tenders & Risk Advisory", desc: "Support across the procurement and tender process, plus risk management and regulatory advisory tailored to your sector." },
@@ -61,7 +61,7 @@ const serviceData: Record<string, ServiceData> = {
     metaTitle: "Energy, Construction & Engineering Lawyers in Abuja | 1ST Hierarchy",
     metaDesc: "Joint ventures, concessions, APG/BG/LPO processing, service provision and land access arrangements for energy, construction & engineering projects in Nigeria.",
     headline: "Specialist Legal Support for Infrastructure & Energy Projects",
-    intro: "We bring focused legal expertise to the energy, construction, and engineering sectors — drawing on real project experience including EU-funded LPG and hydrogen initiatives. We help clients structure deals, manage risk, and engage effectively with public and private stakeholders.",
+    intro: "We bring focused legal expertise to the energy, construction, and engineering sectors, drawing on real project experience including EU-funded LPG and hydrogen initiatives. We help clients structure deals, manage risk, and engage effectively with public and private stakeholders.",
     features: [
       { title: "Joint Venture Arrangements", desc: "Structuring and documenting joint ventures between local and international partners across the energy and construction value chain." },
       { title: "Sale & Purchase Arrangements", desc: "Negotiating and documenting sale and purchase agreements for assets, equipment, and project interests." },
@@ -81,7 +81,7 @@ const serviceData: Record<string, ServiceData> = {
     metaTitle: "Property & Real Estate Lawyers in Abuja | 1ST Hierarchy Solicitors",
     metaDesc: "Sale and lease negotiations, commercial leasing, conveyancing, and property development & management services in Abuja, Nigeria.",
     headline: "Property Counsel for Owners, Developers & Tenants",
-    intro: "From single-asset transactions to multi-phase developments, our Property practice supports clients through every stage of acquisition, leasing, and management — with a clear focus on title security and commercial outcomes.",
+    intro: "From single-asset transactions to multi-phase developments, our Property practice supports clients through every stage of acquisition, leasing, and management, with a clear focus on title security and commercial outcomes.",
     features: [
       { title: "Sale & Lease Negotiations", desc: "Negotiation and documentation of property sales and lease agreements that protect your commercial interests." },
       { title: "Commercial Leasing", desc: "Drafting and advising on commercial lease arrangements for landlords and tenants in Abuja and beyond." },
@@ -121,7 +121,7 @@ const serviceData: Record<string, ServiceData> = {
     metaTitle: "Tax Lawyers in Abuja | 1ST Hierarchy Solicitors",
     metaDesc: "Tax Clearance and VAT Certificate processing, plus practical tax advisory services in Abuja, Nigeria.",
     headline: "Practical Tax Counsel for Businesses & Individuals",
-    intro: "Our Taxation practice handles the routine and the complex — from processing Tax Clearance and VAT certificates to providing practical tax advisory tailored to your transactions and operations.",
+    intro: "Our Taxation practice handles the routine and the complex, from processing Tax Clearance and VAT certificates to providing practical tax advisory tailored to your transactions and operations.",
     features: [
       { title: "Tax Clearance Processing", desc: "End-to-end processing of Tax Clearance Certificates with relevant federal and state tax authorities." },
       { title: "VAT Certificate Processing", desc: "Registration for VAT and processing of VAT certificates required for business operations and contracting." },

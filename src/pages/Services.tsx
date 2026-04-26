@@ -31,7 +31,7 @@ const services = [
   {
     icon: Scale,
     title: "Alternative Dispute Resolution",
-    desc: "Dispute resolution and mediation, workplace relations management, and litigation management — pursued strategically to deliver effective outcomes.",
+    desc: "Dispute resolution and mediation, workplace relations management, and litigation management, pursued strategically to deliver effective outcomes.",
     path: "/services/adr",
   },
   {
@@ -92,7 +92,7 @@ const ServicesPage = () => (
             <RevealItem delay={150}><h2 className="font-serif text-3xl lg:text-5xl font-bold mt-4">Flexible, Transparent Pricing</h2></RevealItem>
             <RevealItem delay={300}>
               <p className="text-muted-foreground text-lg mt-6 leading-relaxed">
-                Our billing is geared toward cost-effective, flexible payment options — clients pay for services rendered, not time spent. To ensure transparency we offer the following options:
+                Our billing is geared toward cost-effective, flexible payment options, where clients pay for services rendered, not time spent. To ensure transparency we offer the following options:
               </p>
             </RevealItem>
           </div>
@@ -101,7 +101,7 @@ const ServicesPage = () => (
               <div className="p-8 bg-card border border-border rounded-lg h-full">
                 <h3 className="font-serif text-xl font-semibold mb-3">Retainers</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  A fixed periodic fee — monthly, quarterly, or yearly — under either a global retainer covering all aspects of your legal work, or a specific retainer covering identified areas. Calculated to equate to the average value of work over time, smoothing peaks and troughs and giving you budgeting certainty.
+                  A fixed periodic fee, paid monthly, quarterly, or yearly, under either a global retainer covering all aspects of your legal work, or a specific retainer covering identified areas. Calculated to equate to the average value of work over time, smoothing peaks and troughs and giving you budgeting certainty.
                 </p>
               </div>
             </RevealItem>
@@ -109,7 +109,7 @@ const ServicesPage = () => (
               <div className="p-8 bg-card border border-border rounded-lg h-full">
                 <h3 className="font-serif text-xl font-semibold mb-3">Fixed Fees</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  We will quote and stick to a fixed fee for any transaction or piece of legal work at your request — giving you full clarity on cost before we begin.
+                  We will quote and stick to a fixed fee for any transaction or piece of legal work at your request, giving you full clarity on cost before we begin.
                 </p>
               </div>
             </RevealItem>
