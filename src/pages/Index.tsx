@@ -131,35 +131,6 @@ const Index = () => (
       </section>
     </RevealSection>
 
-    {/* Testimonials */}
-    <RevealSection>
-      <section className="py-24">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <RevealItem>
-              <span className="text-gold text-sm tracking-[0.3em] uppercase font-sans">Client Testimonials</span>
-            </RevealItem>
-            <RevealItem delay={150}>
-              <h2 className="font-serif text-3xl lg:text-5xl font-bold mt-4">Trusted by Industry Leaders</h2>
-            </RevealItem>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((t, i) => (
-              <RevealItem key={t.name} delay={i * 150}>
-                <div className="p-8 bg-card border border-border rounded-lg h-full flex flex-col">
-                  <Quote className="text-gold/30 mb-4" size={32} />
-                  <p className="text-muted-foreground text-sm leading-relaxed flex-1">"{t.text}"</p>
-                  <div className="mt-6 pt-6 border-t border-border">
-                    <div className="font-serif font-semibold text-foreground">{t.name}</div>
-                    <div className="text-gold text-xs mt-1">{t.role}</div>
-                  </div>
-                </div>
-              </RevealItem>
-            ))}
-          </div>
-        </div>
-      </section>
-    </RevealSection>
 
     {/* CTA */}
     <section className="py-24 bg-secondary relative overflow-hidden">
