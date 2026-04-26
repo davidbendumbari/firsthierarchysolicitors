@@ -7,12 +7,8 @@ const Footer = () => (
     <div className="container mx-auto px-6 py-16">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="md:col-span-1">
-          <div className="flex items-center gap-3 mb-4">
-            <img src={logo} alt="1ST Hierarchy Solicitors logo" className="h-12 w-auto object-contain" />
-            <div>
-              <span className="font-serif text-lg font-semibold text-foreground">1ST Hierarchy</span>
-              <span className="block text-xs tracking-[0.2em] uppercase text-muted-foreground">Solicitors</span>
-            </div>
+          <div className="mb-4">
+            <img src={logo} alt="1ST Hierarchy Solicitors logo" className="h-16 w-auto object-contain" />
           </div>
           <p className="text-muted-foreground text-sm leading-relaxed mt-4">
             Premier corporate and commercial law firm delivering exceptional legal solutions in Abuja, Nigeria.
