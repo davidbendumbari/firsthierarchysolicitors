@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { RevealSection, RevealItem } from "@/hooks/useScrollReveal";
-import { Scale, FileText, Building2, ShieldCheck, Gavel, Briefcase, ArrowRight, Quote } from "lucide-react";
+import { Building2, Briefcase, HardHat, Home, Scale, Calculator, ArrowRight, Quote } from "lucide-react";
 import heroImage from "@/assets/hero-abuja.webp";
 
 const services = [
-  { icon: Building2, title: "Corporate & Commercial Law", desc: "Comprehensive legal frameworks for business formation, governance, and commercial transactions.", path: "/services/corporate-commercial" },
-  { icon: FileText, title: "Contract Drafting & Negotiation", desc: "Meticulously crafted contracts that protect your interests and drive successful partnerships.", path: "/services/contracts" },
-  { icon: Scale, title: "Mergers & Acquisitions", desc: "Strategic counsel through complex M&A transactions, due diligence, and deal structuring.", path: "/services/mergers-acquisitions" },
-  { icon: ShieldCheck, title: "Regulatory Compliance", desc: "Navigate Nigeria's regulatory landscape with confidence and full compliance assurance.", path: "/services/compliance" },
-  { icon: Gavel, title: "Dispute Resolution & Litigation", desc: "Vigorous representation in commercial disputes, arbitration, and litigation matters.", path: "/services/dispute-resolution" },
-  { icon: Briefcase, title: "Legal Advisory for Businesses", desc: "Ongoing strategic legal counsel tailored to your business objectives and growth.", path: "/services/legal-advisory" },
+  { icon: Building2, title: "Corporate", desc: "Acquisitions, mergers, capital raising, governance, company secretarial and corporate advisory.", path: "/services/corporate" },
+  { icon: Briefcase, title: "Commercial", desc: "Contract drafting & management, registrations, licenses, procurement and regulatory advisory.", path: "/services/commercial" },
+  { icon: HardHat, title: "Energy, Construction & Engineering", desc: "Joint ventures, concessions, APG/BG/LPO processing, service provision and land access arrangements.", path: "/services/energy-construction" },
+  { icon: Home, title: "Property", desc: "Sale & lease negotiations, commercial leasing, conveyancing, and property development & management.", path: "/services/property" },
+  { icon: Scale, title: "Alternative Dispute Resolution", desc: "Mediation, workplace relations management, and litigation management for commercial disputes.", path: "/services/adr" },
+  { icon: Calculator, title: "Taxation", desc: "Tax Clearance and VAT certificate processing, plus practical tax advisory for your business.", path: "/services/taxation" },
 ];
 
 const testimonials = [
@@ -63,9 +63,9 @@ const Index = () => (
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
             {[
-              { num: "15+", label: "Years Combined Experience" },
-              { num: "200+", label: "Corporate Clients Served" },
-              { num: "98%", label: "Client Satisfaction Rate" },
+              { num: "Since 2011", label: "Serving Nigerian Businesses" },
+              { num: "₦7B+", label: "Raised on Client Transactions" },
+              { num: "Multi-Sector", label: "Public, Energy, ICT, Finance & More" },
             ].map((stat, i) => (
               <RevealItem key={stat.label} delay={i * 150}>
                 <div className="text-4xl lg:text-5xl font-serif font-bold text-gradient-gold">{stat.num}</div>
