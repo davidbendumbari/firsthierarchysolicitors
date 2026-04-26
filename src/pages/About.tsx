@@ -11,21 +11,33 @@ const team = [
     name: "Nafisah Abubakar",
     role: "Principal Partner",
     image: nafisatImg,
-    bio: "Nafisah Abubakar is a highly trained and experienced Legal Practitioner who was called to the Nigerian Bar as a Barrister and Solicitor seventeen years ago. With a blended skill set and diverse experience, she has spent seventeen years working as a corporate lawyer, a company secretary, and a project manager, as well as thirteen years in the developmental and non-profit space. As founder and Principal Partner of 1ST Hierarchy Solicitors (established 2011), she specializes in corporate and commercial legal services, company secretarial services, advisory services, and commercial contract management — serving clients across the public sector, oil and gas, energy, technology, financial services, education, renewable energy, construction, hospitality, and fashion. Through 1ST Hierarchy, Nafisah has acted as solicitor on capital raising, private equity, and debt exercises contributing over Seven Billion Naira (₦7,000,000,000) raised from the capital market, private investors, and sukuk bonds. Notable engagements include serving as solicitor to Afriswiss Capital Asset Management Limited on the 100% acquisition of First Bank Nigeria Mortgages (2016), and joint solicitor to FBN Mortgages on the merger with TrustBond Mortgage Bank PLC (2019) — leading to the establishment of First-Trust Mortgage Bank PLC in 2020. She also serves as Legal Adviser and Head of Secretariat for Rural Women Energy Security (RUWES) Nigeria, and was appointed National Senior Expert on two EU-funded projects: the Nigerian Energy Support Programme (NESP) II LPG Intervention, and a German-Nigerian Hydrogen Office study, where she helped develop policy recommendations and a Hydrogen development roadmap for Nigeria. Nafisah holds an LL.M from the University of South Wales (UK), a B.L from the Nigerian Law School (Kano), and an LL.B from the University of Abuja. She is currently undertaking an executive leadership program with the University of Oxford and Saïd Business School.",
+    bio: [
+      "Nafisah Abubakar is a highly trained and experienced Legal Practitioner who was called to the Nigerian Bar as a Barrister and Solicitor seventeen years ago. With a blended skill set and diverse experience, she has spent seventeen years working as a corporate lawyer, a company secretary, and a project manager, as well as thirteen years in the developmental and non-profit space.",
+      "As founder and Principal Partner of 1ST Hierarchy Solicitors (established 2011), she specializes in corporate and commercial legal services, company secretarial services, advisory services, and commercial contract management. Her clients span the public sector, oil and gas, energy, technology, financial services, education, renewable energy, construction, hospitality, and fashion.",
+      "Through 1ST Hierarchy, Nafisah has acted as solicitor on capital raising, private equity, and debt exercises contributing over Seven Billion Naira (₦7,000,000,000) raised from the capital market, private investors, and sukuk bonds. Notable engagements include serving as solicitor to Afriswiss Capital Asset Management Limited on the 100% acquisition of First Bank Nigeria Mortgages (2016), and joint solicitor to FBN Mortgages on the merger with TrustBond Mortgage Bank PLC (2019), which led to the establishment of First-Trust Mortgage Bank PLC in 2020.",
+      "She also serves as Legal Adviser and Head of Secretariat for Rural Women Energy Security (RUWES) Nigeria, and was appointed National Senior Expert on two EU-funded projects: the Nigerian Energy Support Programme (NESP) II LPG Intervention, and a German-Nigerian Hydrogen Office study, where she helped develop policy recommendations and a Hydrogen development roadmap for Nigeria.",
+      "Nafisah holds an LL.M from the University of South Wales (UK), a B.L from the Nigerian Law School (Kano), and an LL.B from the University of Abuja. She is currently undertaking an executive leadership program with the University of Oxford and Saïd Business School.",
+    ],
     specializations: ["Corporate & Commercial", "Company Secretarial", "Capital Raising & M&A", "Energy & Renewables", "Regulatory Advisory"],
   },
   {
     name: "Clinton Biragbara Nenniibarini",
     role: "Junior Partner",
     image: clintonImg,
-    bio: "Clinton Biragbara joined 1ST Hierarchy in 2014 as a Legal Officer and, by virtue of his hard work and dedication, rose to the rank of Junior Partner in 2016. Called to the Nigerian Bar as a Barrister and Solicitor in 2012, he brings over a decade of experience — first as a litigation lawyer and subsequently as a corporate lawyer. Clinton holds an LL.B from the University of Jos and a B.L qualification from the Nigerian Law School (Enugu campus). He also holds a National Diploma in Law from Rivers State College of Arts and Science, and is a Certified Mediator and Arbitrator.",
+    bio: [
+      "Clinton Biragbara joined 1ST Hierarchy in 2014 as a Legal Officer and, by virtue of his hard work and dedication, rose to the rank of Junior Partner in 2016. Called to the Nigerian Bar as a Barrister and Solicitor in 2012, he brings over a decade of experience, first as a litigation lawyer and subsequently as a corporate lawyer.",
+      "Clinton holds an LL.B from the University of Jos and a B.L qualification from the Nigerian Law School (Enugu campus). He also holds a National Diploma in Law from Rivers State College of Arts and Science, and is a Certified Mediator and Arbitrator.",
+    ],
     specializations: ["Corporate & Commercial", "Property", "Taxation", "Alternative Dispute Resolution"],
   },
   {
     name: "James Osita Ibegbunam",
     role: "Senior Associate",
     image: "",
-    bio: "James Ibegbunam joined the firm in 2023. Called to the Nigerian Bar as a Barrister and Solicitor in 2019, he has over five years of experience working first as a litigation lawyer and then as a corporate lawyer. James holds an LL.B from the University of Jos and a B.L qualification from the Nigerian Law School (Enugu campus). His key areas of expertise include commercial, corporate, and property law.",
+    bio: [
+      "James Ibegbunam joined the firm in 2023. Called to the Nigerian Bar as a Barrister and Solicitor in 2019, he has over five years of experience working first as a litigation lawyer and then as a corporate lawyer.",
+      "James holds an LL.B from the University of Jos and a B.L qualification from the Nigerian Law School (Enugu campus). His key areas of expertise include commercial, corporate, and property law.",
+    ],
     specializations: ["Commercial", "Corporate", "Property"],
   },
 ];
@@ -38,7 +50,7 @@ const values = [
 ];
 
 const registrations = [
-  "Corporate Affairs Commission (CAC) — Registered Law Firm",
+  "Corporate Affairs Commission (CAC) Registered Law Firm",
   "Chartered Institute of Chartered Secretaries and Administrators (ICSA UK)",
   "Nigerian Bar Association (NBA)",
   "International Association of Risk and Compliance Professionals (IARCP)",
@@ -75,7 +87,7 @@ const AboutPage = () => (
           </RevealItem>
           <RevealItem delay={300}>
             <p className="text-muted-foreground text-lg mt-8 leading-relaxed">
-              We have a reputation for providing exceptional legal service — known for our commitment to excellence, expediency, and the ability to find innovative solutions to the most complex of legal and corporate problems. Years of working with diverse clients in the private and public sector have given us deep expertise across Engineering and Construction, ICT, Renewable Energy, Government, Financial Services, Hospitality, Agribusiness, Education, Fashion, and more.
+              We have a reputation for providing exceptional legal service, known for our commitment to excellence, expediency, and the ability to find innovative solutions to the most complex of legal and corporate problems. Years of working with diverse clients in the private and public sector have given us deep expertise across Engineering and Construction, ICT, Renewable Energy, Government, Financial Services, Hospitality, Agribusiness, Education, Fashion, and more.
             </p>
           </RevealItem>
         </div>
@@ -132,7 +144,11 @@ const AboutPage = () => (
                   )}
                   <h3 className="font-serif text-2xl font-bold group-hover:text-gold transition-colors">{member.name}</h3>
                   <p className="text-gold text-sm mt-1">{member.role}</p>
-                  <p className="text-muted-foreground text-sm leading-relaxed mt-4">{member.bio}</p>
+                  <div className="mt-4 space-y-4">
+                    {member.bio.map((para, idx) => (
+                      <p key={idx} className="text-muted-foreground text-sm leading-relaxed">{para}</p>
+                    ))}
+                  </div>
                   <div className="mt-6 flex flex-wrap gap-2">
                     {member.specializations.map((spec) => (
                       <span key={spec} className="px-3 py-1 bg-secondary text-xs text-muted-foreground rounded-full border border-border">
