@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => (
   <footer className="bg-secondary border-t border-border">
@@ -7,9 +8,7 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="md:col-span-1">
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 gradient-gold rounded-sm flex items-center justify-center font-serif font-bold text-primary-foreground text-lg">
-              1H
-            </div>
+            <img src={logo} alt="1ST Hierarchy Solicitors logo" className="h-12 w-auto object-contain" />
             <div>
               <span className="font-serif text-lg font-semibold text-foreground">1ST Hierarchy</span>
               <span className="block text-xs tracking-[0.2em] uppercase text-muted-foreground">Solicitors</span>
