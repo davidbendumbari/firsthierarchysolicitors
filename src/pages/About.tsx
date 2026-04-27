@@ -6,6 +6,7 @@ import { ArrowRight, Award, Users, Target, Heart, CheckCircle2 } from "lucide-re
 import nafisatImg from "@/assets/nafisat.png";
 import clintonImg from "@/assets/clinton.png";
 import duduImg from "@/assets/dudu.jpg";
+import jamesImg from "@/assets/james.jpg";
 
 const team = [
   {
@@ -33,7 +34,7 @@ const team = [
   {
     name: "James Osita Ibegbunam",
     role: "Senior Associate",
-    image: "",
+    image: jamesImg,
     bio: [
       "James Ibegbunam joined the firm in 2023. Called to the Nigerian Bar as a Barrister and Solicitor in 2019, he has over five years of experience working first as a litigation lawyer and then as a corporate lawyer.",
       "James holds an LL.B from the University of Jos and a B.L qualification from the Nigerian Law School (Enugu campus). His key areas of expertise include commercial, corporate, and property law.",
