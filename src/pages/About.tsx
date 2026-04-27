@@ -40,6 +40,17 @@ const team = [
     ],
     specializations: ["Commercial", "Corporate", "Property"],
   },
+  {
+    name: "Dudu Sunday",
+    role: "Head of Administration",
+    image: duduImg,
+    bio: [
+      "Dudu Sunday joined 1ST Hierarchy in 2017 as an Administrative Officer. He is a dedicated administrative professional with a strong background in public administration, holding a Bachelor's degree in Public Administration from Nasarawa State University and a National Diploma in the same field from the Federal Polytechnic, Nasarawa.",
+      "With a solid foundation in organization management and administrative processes, Dudu brings efficiency, structure, and professionalism to his role. As Head of Administration, he oversees the firm's daily administrative operations, ensuring smooth workflow and effective coordination across departments.",
+      "His commitment to excellence and attention to detail contribute significantly to maintaining the firm's high standards of service delivery.",
+    ],
+    specializations: ["Administration", "Operations", "Coordination"],
+  },
 ];
 
 const values = [
