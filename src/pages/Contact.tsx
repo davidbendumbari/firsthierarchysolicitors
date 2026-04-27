@@ -47,7 +47,6 @@ const ContactPage = () => {
                 {[
                   { icon: MapPin, label: "Office Address", value: "No. 3 T. O. S. Benson Crescent, Off Ngozi Okonjo-Iweala Way, Utako, Abuja, FCT, Nigeria" },
                   { icon: Phone, label: "Office Land Line", value: "+234 703 620 7801" },
-                  { icon: Phone, label: "Principal Partner", value: "+234 803 600 3580" },
                   { icon: Mail, label: "Office Email", value: "legal@1sthierarchy.com" },
                   { icon: Mail, label: "Principal Partner", value: "nabubakar@1sthierarchy.com" },
                   { icon: Clock, label: "Office Hours", value: "Mon – Fri: 9:00 AM – 6:00 PM" },

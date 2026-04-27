@@ -45,10 +45,7 @@ const Footer = () => (
             </div>
             <div className="flex items-start gap-3">
               <Phone size={16} className="text-gold mt-0.5 shrink-0" />
-              <div className="flex flex-col gap-1">
-                <a href="tel:+2347036207801" className="text-sm text-muted-foreground hover:text-gold transition-colors">+234 703 620 7801</a>
-                <a href="tel:+2348036003580" className="text-sm text-muted-foreground hover:text-gold transition-colors">+234 803 600 3580</a>
-              </div>
+              <a href="tel:+2347036207801" className="text-sm text-muted-foreground hover:text-gold transition-colors">+234 703 620 7801</a>
             </div>
             <div className="flex items-center gap-3">
               <Mail size={16} className="text-gold shrink-0" />
