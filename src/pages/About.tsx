@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, Users, Target, Heart, CheckCircle2 } from "lucide-react";
 import nafisatImg from "@/assets/nafisat.png";
 import clintonImg from "@/assets/clinton.png";
+import duduImg from "@/assets/dudu.jpg";
 
 const team = [
   {
@@ -12,11 +13,10 @@ const team = [
     role: "Principal Partner",
     image: nafisatImg,
     bio: [
-      "Nafisah Abubakar is a highly trained and experienced Legal Practitioner who was called to the Nigerian Bar as a Barrister and Solicitor seventeen years ago. With a blended skill set and diverse experience, she has spent seventeen years working as a corporate lawyer, a company secretary, and a project manager, as well as thirteen years in the developmental and non-profit space.",
-      "As founder and Principal Partner of 1ST Hierarchy Solicitors (established 2011), she specializes in corporate and commercial legal services, company secretarial services, advisory services, and commercial contract management. Her clients span the public sector, oil and gas, energy, technology, financial services, education, renewable energy, construction, hospitality, and fashion.",
-      "Through 1ST Hierarchy, Nafisah has acted as solicitor on capital raising, private equity, and debt exercises contributing over Seven Billion Naira (₦7,000,000,000) raised from the capital market, private investors, and sukuk bonds. Notable engagements include serving as solicitor to Afriswiss Capital Asset Management Limited on the 100% acquisition of First Bank Nigeria Mortgages (2016), and joint solicitor to FBN Mortgages on the merger with TrustBond Mortgage Bank PLC (2019), which led to the establishment of First-Trust Mortgage Bank PLC in 2020.",
-      "She also serves as Legal Adviser and Head of Secretariat for Rural Women Energy Security (RUWES) Nigeria, and was appointed National Senior Expert on two EU-funded projects: the Nigerian Energy Support Programme (NESP) II LPG Intervention, and a German-Nigerian Hydrogen Office study, where she helped develop policy recommendations and a Hydrogen development roadmap for Nigeria.",
-      "Nafisah holds an LL.M from the University of South Wales (UK), a B.L from the Nigerian Law School (Kano), and an LL.B from the University of Abuja. She is currently undertaking an executive leadership program with the University of Oxford and Saïd Business School.",
+      "Nafisah Abubakar is the founder and Principal Partner of 1ST Hierarchy Solicitors (established 2011). Called to the Nigerian Bar seventeen years ago, she brings a blended skill set as a corporate lawyer, company secretary, and project manager, with over a decade of experience in the developmental and non-profit space.",
+      "She specializes in corporate and commercial legal services, company secretarial services, advisory, and commercial contract management. Her clients span the public sector, oil and gas, energy, technology, financial services, education, renewable energy, construction, hospitality, and fashion.",
+      "Nafisah has acted as solicitor on capital raising, private equity, and debt exercises contributing over ₦7 billion raised from the capital market, private investors, and sukuk bonds. She also serves as Legal Adviser and Head of Secretariat for Rural Women Energy Security (RUWES) Nigeria, and was appointed National Senior Expert on EU-funded energy and hydrogen projects.",
+      "She holds an LL.M from the University of South Wales (UK), a B.L from the Nigerian Law School (Kano), and an LL.B from the University of Abuja, and is currently undertaking an executive leadership program with the University of Oxford and Saïd Business School.",
     ],
     specializations: ["Corporate & Commercial", "Company Secretarial", "Capital Raising & M&A", "Energy & Renewables", "Regulatory Advisory"],
   },
@@ -39,6 +39,17 @@ const team = [
       "James holds an LL.B from the University of Jos and a B.L qualification from the Nigerian Law School (Enugu campus). His key areas of expertise include commercial, corporate, and property law.",
     ],
     specializations: ["Commercial", "Corporate", "Property"],
+  },
+  {
+    name: "Dudu Sunday",
+    role: "Head of Administration",
+    image: duduImg,
+    bio: [
+      "Dudu Sunday joined 1ST Hierarchy in 2017 as an Administrative Officer. He is a dedicated administrative professional with a strong background in public administration, holding a Bachelor's degree in Public Administration from Nasarawa State University and a National Diploma in the same field from the Federal Polytechnic, Nasarawa.",
+      "With a solid foundation in organization management and administrative processes, Dudu brings efficiency, structure, and professionalism to his role. As Head of Administration, he oversees the firm's daily administrative operations, ensuring smooth workflow and effective coordination across departments.",
+      "His commitment to excellence and attention to detail contribute significantly to maintaining the firm's high standards of service delivery.",
+    ],
+    specializations: ["Administration", "Operations", "Coordination"],
   },
 ];
 
