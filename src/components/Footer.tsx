@@ -58,6 +58,22 @@ const Footer = () => (
         </div>
       </div>
 
+      <div className="mt-12">
+        <h4 className="font-serif text-sm font-semibold text-foreground uppercase tracking-wider mb-4">Find Us</h4>
+        <div className="rounded-lg overflow-hidden border border-border">
+          <iframe
+            title="1ST Hierarchy Solicitors office location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.9049697052437!2d7.444638412214011!3d9.072421790953072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0ad7a747dd97%3A0x20883a807e8f56e0!2s3%20T.O.S.%20Benson%20Crescent%2C%20Mabushi%2C%20Abuja%20900108%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1777284734039!5m2!1sen!2sng"
+            width="100%"
+            height="320"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
+      </div>
+
       <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-xs text-muted-foreground">
           © {new Date().getFullYear()} 1ST Hierarchy Solicitors. All rights reserved.
