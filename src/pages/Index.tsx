@@ -76,7 +76,7 @@ const Index = () => (
       <section className="py-24">
         <div className="container mx-auto px-6 max-w-4xl text-center">
           <RevealItem>
-            <span className="text-gold text-sm tracking-[0.3em] uppercase font-sans">Our Mission</span>
+            <span className="text-gold text-sm tracking-[0.3em] uppercase font-sans">Mission Statement</span>
           </RevealItem>
           <RevealItem delay={150}>
             <h2 className="font-serif text-3xl lg:text-5xl font-bold mt-4">
@@ -85,9 +85,36 @@ const Index = () => (
           </RevealItem>
           <RevealItem delay={300}>
             <p className="text-muted-foreground text-lg leading-relaxed mt-8">
-              At 1ST Hierarchy Solicitors, we believe that exceptional legal counsel is the foundation of every successful enterprise. We combine deep expertise in Nigerian corporate law with a forward-thinking approach, ensuring our clients navigate complexities with clarity, confidence, and a decisive competitive edge.
+              To provide corporate and institutional clients in Nigeria with efficient and effective legal solutions that safeguard operations and drive sustainable growth.
             </p>
           </RevealItem>
+        </div>
+      </section>
+    </RevealSection>
+
+    {/* Core Values */}
+    <RevealSection>
+      <section className="py-24 bg-secondary">
+        <div className="container mx-auto px-6 max-w-5xl">
+          <div className="text-center mb-16">
+            <RevealItem>
+              <span className="text-gold text-sm tracking-[0.3em] uppercase font-sans">Core Values</span>
+            </RevealItem>
+            <RevealItem delay={150}>
+              <h2 className="font-serif text-3xl lg:text-5xl font-bold mt-4">
+                The Principles That <span className="text-gradient-gold">Guide Us</span>
+              </h2>
+            </RevealItem>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+            {["Respect", "Integrity", "Innovation", "Excellence", "Teamwork"].map((value, i) => (
+              <RevealItem key={value} delay={i * 100}>
+                <div className="bg-card border border-border rounded-lg p-6 text-center hover:border-gold/40 transition-all duration-500 h-full">
+                  <h3 className="font-serif text-xl lg:text-2xl font-semibold text-gradient-gold">{value}</h3>
+                </div>
+              </RevealItem>
+            ))}
+          </div>
         </div>
       </section>
     </RevealSection>

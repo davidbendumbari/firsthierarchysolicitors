@@ -191,7 +191,7 @@ const AboutPage = () => (
     {/* CTA */}
     <section className="py-24 text-center">
       <div className="container mx-auto px-6">
-        <h2 className="font-serif text-3xl lg:text-4xl font-bold">Work With Us</h2>
+        <h2 className="font-serif text-3xl lg:text-4xl font-bold">Contact Us</h2>
         <p className="text-muted-foreground mt-4 text-lg max-w-xl mx-auto">
           Ready to discuss your legal needs? Our team is here to help.
         </p>
