@@ -130,7 +130,7 @@ const AboutPage = () => (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {values.map((v, i) => (
               <RevealItem key={v.title} delay={i * 100}>
-                <div className="p-6">
+                <div className={`p-6 ${i === values.length - 1 ? "col-span-2 md:col-span-1 max-w-xs mx-auto md:max-w-none" : ""}`}>
                   <v.icon className="text-gold mx-auto mb-4 block" size={36} />
                   <h3 className="font-serif text-lg font-semibold mb-2">{v.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed text-center">{v.desc}</p>
