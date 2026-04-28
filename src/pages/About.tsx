@@ -127,7 +127,7 @@ const AboutPage = () => (
             <RevealItem><span className="text-gold text-sm tracking-[0.3em] uppercase font-sans">Our Values</span></RevealItem>
             <RevealItem delay={150}><h2 className="font-serif text-3xl lg:text-5xl font-bold mt-4">What We Stand For</h2></RevealItem>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {values.map((v, i) => (
               <RevealItem key={v.title} delay={i * 100}>
                 <div className="text-center p-6">
