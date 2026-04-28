@@ -7,6 +7,7 @@ import nafisatImg from "@/assets/nafisat.png";
 import clintonImg from "@/assets/clinton.png";
 import duduImg from "@/assets/dudu.jpg";
 import jamesImg from "@/assets/james.jpg";
+import ladifatuImg from "@/assets/ladifatu.jpg";
 
 const team = [
   {
@@ -40,6 +41,17 @@ const team = [
       "James holds an LL.B from the University of Jos and a B.L qualification from the Nigerian Law School (Enugu campus). His key areas of expertise include commercial, corporate, and property law.",
     ],
     specializations: ["Commercial", "Corporate", "Property"],
+  },
+  {
+    name: "Ladifatu Ahmed Isa",
+    role: "Junior Associate",
+    image: ladifatuImg,
+    bio: [
+      "Ladifatu Ahmed Isa joined the Firm as a Junior Associate in 2025. She was called to the Nigerian Bar as a Barrister and Solicitor of the Supreme Court of Nigeria in 2020 and has over five years of post call experience, having begun her career in litigation before transitioning into corporate practice.",
+      "Her areas of expertise include property law, corporate law, and commercial law, where she provides practical and client focused legal support across a range of transactions and advisory matters.",
+      "Ladifatu holds a Bachelor of Laws (LL.B) degree from Igbinedion University, Okada, Edo State, and a Barrister at Law (B.L) qualification from the Nigerian Law School, Abuja Campus. She also holds a Master's degree in Law Enforcement and Criminal Justice from Ahmadu Bello University, Zaria.",
+    ],
+    specializations: ["Property", "Corporate", "Commercial"],
   },
   {
     name: "Dudu Sunday",
