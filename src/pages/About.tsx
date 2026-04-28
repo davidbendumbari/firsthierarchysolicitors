@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import { RevealSection, RevealItem } from "@/hooks/useScrollReveal";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Award, Users, Target, Heart, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Award, Users, Target, Heart, CheckCircle2, Handshake, Lightbulb } from "lucide-react";
 import nafisatImg from "@/assets/nafisat.png";
 import clintonImg from "@/assets/clinton.png";
 import duduImg from "@/assets/dudu.jpg";
@@ -67,10 +67,11 @@ const team = [
 ];
 
 const values = [
-  { icon: Award, title: "Excellence", desc: "We pursue the highest standards in every matter we handle, ensuring exceptional outcomes." },
-  { icon: Users, title: "Client-Centricity", desc: "Your objectives drive our strategy. We listen, understand, and deliver solutions tailored to you." },
-  { icon: Target, title: "Diligence", desc: "Every document, every argument, every strategy is crafted with meticulous attention to detail." },
+  { icon: Handshake, title: "Respect", desc: "We treat every client, colleague, and counterpart with dignity, courtesy, and genuine regard." },
   { icon: Heart, title: "Integrity", desc: "We uphold the highest ethical standards, building lasting relationships founded on trust." },
+  { icon: Lightbulb, title: "Innovation", desc: "We embrace forward thinking and creative solutions to navigate complex legal challenges." },
+  { icon: Award, title: "Excellence", desc: "We pursue the highest standards in every matter we handle, ensuring exceptional outcomes." },
+  { icon: Users, title: "Teamwork", desc: "We collaborate seamlessly across disciplines to deliver the strongest results for our clients." },
 ];
 
 const registrations = [
