@@ -130,10 +130,10 @@ const AboutPage = () => (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {values.map((v, i) => (
               <RevealItem key={v.title} delay={i * 100}>
-                <div className="text-center p-6">
-                  <v.icon className="text-gold mx-auto mb-4" size={36} />
+                <div className="p-6">
+                  <v.icon className="text-gold mb-4" size={36} />
                   <h3 className="font-serif text-lg font-semibold mb-2">{v.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed text-justify">{v.desc}</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed text-left">{v.desc}</p>
                 </div>
               </RevealItem>
             ))}
