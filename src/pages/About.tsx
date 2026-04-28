@@ -133,7 +133,7 @@ const AboutPage = () => (
                 <div className="p-6">
                   <v.icon className="text-gold mx-auto mb-4 block" size={36} />
                   <h3 className="font-serif text-lg font-semibold mb-2">{v.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed text-left">{v.desc}</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed text-center">{v.desc}</p>
                 </div>
               </RevealItem>
             ))}
