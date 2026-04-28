@@ -132,7 +132,7 @@ const AboutPage = () => (
               <RevealItem key={v.title} delay={i * 100}>
                 <div className="p-6">
                   <v.icon className="text-gold mx-auto mb-4 block" size={36} />
-                  <h3 className="font-serif text-lg font-semibold mb-2">{v.title}</h3>
+                  <h3 className="font-serif text-lg font-semibold mb-2 text-center">{v.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed text-center">{v.desc}</p>
                 </div>
               </RevealItem>
