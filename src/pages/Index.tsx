@@ -34,7 +34,7 @@ const Index = () => (
             Business Strategy
           </h1>
           <p className="text-muted-foreground text-lg sm:text-xl mt-8 max-w-xl leading-relaxed animate-fade-up-delay-2">
-            Delivering sophisticated corporate and commercial legal solutions that protect, empower, and elevate your business across Nigeria.
+            To provide corporate and institutional clients in Nigeria with efficient and effective legal solutions that safeguard operations and drive sustainable growth.
           </p>
           <div className="flex flex-wrap gap-4 mt-10 animate-fade-up-delay-3">
             <Button variant="gold" size="lg" asChild>
