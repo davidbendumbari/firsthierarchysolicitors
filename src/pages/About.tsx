@@ -132,9 +132,9 @@ const AboutPage = () => (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {values.map((v, i) => (
               <RevealItem key={v.title} delay={i * 100}>
-                <div className="p-6">
-                  <v.icon className="text-gold mx-auto mb-4 block" size={36} />
-                  <h3 className="font-serif text-lg font-semibold mb-2 text-center">{v.title}</h3>
+                <div className="p-6 rounded-lg border border-transparent hover:border-gold/30 hover:bg-card/40 hover:-translate-y-1 transition-all duration-500 group">
+                  <v.icon className="text-gold mx-auto mb-4 block transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-6" size={36} />
+                  <h3 className="font-serif text-lg font-semibold mb-2 text-center group-hover:text-gold transition-colors">{v.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed text-center">{v.desc}</p>
                 </div>
               </RevealItem>
