@@ -79,6 +79,11 @@ const Footer = () => (
           Licensed to practice law in the Federal Republic of Nigeria
         </p>
       </div>
+      <div className="mt-6 text-center">
+        <p className="text-xs text-muted-foreground">
+          Created by <span className="text-gold">SozInsights Ltd</span>
+        </p>
+      </div>
     </div>
   </footer>
 );
