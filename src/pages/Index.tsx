@@ -33,11 +33,14 @@ const Index = () => (
             <span className="text-gradient-gold">Excellence</span> Meets <br />
             Business Strategy
           </h1>
-          <p className="text-muted-foreground text-lg sm:text-xl mt-8 max-w-xl leading-relaxed animate-fade-up-delay-2">
-            To provide corporate and institutional clients in Nigeria with<br />
-            efficient and effective legal solutions that safeguard<br />
-            operations and drive sustainable growth.
-          </p>
+          <div className="mt-8 animate-fade-up-delay-2">
+            <span className="text-gold text-sm tracking-[0.3em] uppercase font-sans">Mission Statement</span>
+            <p className="text-muted-foreground text-lg sm:text-xl mt-4 max-w-xl leading-relaxed">
+              To provide corporate and institutional clients in Nigeria with<br />
+              efficient and effective legal solutions that safeguard<br />
+              operations and drive sustainable growth.
+            </p>
+          </div>
           <div className="flex flex-wrap gap-4 mt-10 animate-fade-up-delay-3">
             <Button variant="gold" size="lg" asChild>
               <Link to="/contact">Schedule a Consultation <ArrowRight size={18} /></Link>
@@ -73,26 +76,7 @@ const Index = () => (
       </section>
     </RevealSection>
 
-    {/* Mission */}
-    <RevealSection>
-      <section className="py-24">
-        <div className="container mx-auto px-6 max-w-4xl text-center">
-          <RevealItem>
-            <span className="text-gold text-sm tracking-[0.3em] uppercase font-sans">Mission Statement</span>
-          </RevealItem>
-          <RevealItem delay={150}>
-            <h2 className="font-serif text-3xl lg:text-5xl font-bold mt-4">
-              Built on Integrity. <span className="text-gradient-gold">Driven by Excellence.</span>
-            </h2>
-          </RevealItem>
-          <RevealItem delay={300}>
-            <p className="text-muted-foreground text-lg leading-relaxed mt-8">
-              To provide corporate and institutional clients in Nigeria with efficient and effective legal solutions that safeguard operations and drive sustainable growth.
-            </p>
-          </RevealItem>
-        </div>
-      </section>
-    </RevealSection>
+    {/* Mission section removed - now in hero */}
 
     {/* Core Values */}
     <RevealSection>
