@@ -83,6 +83,8 @@ const registrations = [
   "Institute of Corporate Administration Nigeria",
   "Institute of Management Specialists",
   "Association of Professional Mediators and Negotiators",
+  "Society for Corporate Governance",
+  "Financial Reporting Council of Nigeria",
 ];
 
 const AboutPage = () => (
