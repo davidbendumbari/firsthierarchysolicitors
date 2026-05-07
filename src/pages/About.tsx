@@ -24,10 +24,10 @@ const team = [
   },
   {
     name: "Clinton Biragbara Nenniibarini",
-    role: "Junior Partner",
+    role: "Partner",
     image: clintonImg,
     bio: [
-      "Clinton Biragbara joined 1ST Hierarchy in 2014 as a Legal Officer and, by virtue of his hard work and dedication, rose to the rank of Junior Partner in 2016. Called to the Nigerian Bar as a Barrister and Solicitor in 2012, he brings over a decade of experience, first as a litigation lawyer and subsequently as a corporate lawyer.",
+      "Clinton Biragbara joined 1ST Hierarchy in 2014 as a Legal Officer and, by virtue of his hard work and dedication, rose to the rank of Partner in 2016. Called to the Nigerian Bar as a Barrister and Solicitor in 2012, he brings over a decade of experience, first as a litigation lawyer and subsequently as a corporate lawyer.",
       "Clinton holds an LL.B from the University of Jos and a B.L qualification from the Nigerian Law School (Enugu campus). He also holds a National Diploma in Law from Rivers State College of Arts and Science, and is a Certified Mediator and Arbitrator.",
     ],
     specializations: ["Corporate & Commercial", "Property", "Taxation", "Alternative Dispute Resolution"],
