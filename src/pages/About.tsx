@@ -155,15 +155,15 @@ const AboutPage = () => (
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {team.map((member, i) => (
               <RevealItem key={member.name} delay={i * 200}>
-                <div className="bg-card border border-border rounded-lg p-8 lg:p-10 group hover:border-gold/30 transition-all duration-500 h-full">
+                <div className="bg-card border border-border rounded-lg p-8 lg:p-10 group hover:border-gold/40 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_hsl(var(--gold)/0.3)] transition-all duration-500 h-full">
                   {member.image ? (
                     <img
                       src={member.image}
                       alt={member.name}
-                      className="w-28 h-28 rounded-full object-cover border-2 border-gold/30 mb-6"
+                      className="w-28 h-28 rounded-full object-cover border-2 border-gold/30 mb-6 transition-transform duration-500 group-hover:scale-105 group-hover:border-gold"
                     />
                   ) : (
-                    <div className="w-28 h-28 rounded-full border-2 border-gold/30 mb-6 flex items-center justify-center bg-secondary">
+                    <div className="w-28 h-28 rounded-full border-2 border-gold/30 mb-6 flex items-center justify-center bg-secondary transition-transform duration-500 group-hover:scale-105">
                       <span className="font-serif text-3xl text-gold">
                         {member.name.split(" ").map((n) => n[0]).slice(0, 2).join("")}
                       </span>
