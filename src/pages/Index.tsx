@@ -80,7 +80,7 @@ const Index = () => (
 
     {/* Core Values */}
     <RevealSection>
-      <section className="py-24 bg-secondary">
+      <section className="pt-0 pb-24 bg-secondary">
         <div className="container mx-auto px-6 max-w-5xl">
           <div className="text-center mb-16">
             <RevealItem>
@@ -107,7 +107,7 @@ const Index = () => (
 
     {/* Services */}
     <RevealSection>
-      <section className="py-24 bg-secondary">
+      <section className="pt-0 pb-24 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <RevealItem>
