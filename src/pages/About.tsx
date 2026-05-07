@@ -132,9 +132,9 @@ const AboutPage = () => (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {values.map((v, i) => (
               <RevealItem key={v.title} delay={i * 100}>
-                <div className="p-6">
-                  <v.icon className="text-gold mx-auto mb-4 block" size={36} />
-                  <h3 className="font-serif text-lg font-semibold mb-2 text-center">{v.title}</h3>
+                <div className="p-6 rounded-lg border border-transparent hover:border-gold/30 hover:bg-card/40 hover:-translate-y-1 transition-all duration-500 group">
+                  <v.icon className="text-gold mx-auto mb-4 block transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-6" size={36} />
+                  <h3 className="font-serif text-lg font-semibold mb-2 text-center group-hover:text-gold transition-colors">{v.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed text-center">{v.desc}</p>
                 </div>
               </RevealItem>
@@ -155,15 +155,15 @@ const AboutPage = () => (
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {team.map((member, i) => (
               <RevealItem key={member.name} delay={i * 200}>
-                <div className="bg-card border border-border rounded-lg p-8 lg:p-10 group hover:border-gold/30 transition-all duration-500 h-full">
+                <div className="bg-card border border-border rounded-lg p-8 lg:p-10 group hover:border-gold/40 hover:-translate-y-1 hover:shadow-[0_20px_40px_-20px_hsl(var(--gold)/0.3)] transition-all duration-500 h-full">
                   {member.image ? (
                     <img
                       src={member.image}
                       alt={member.name}
-                      className="w-28 h-28 rounded-full object-cover border-2 border-gold/30 mb-6"
+                      className="w-28 h-28 rounded-full object-cover border-2 border-gold/30 mb-6 transition-transform duration-500 group-hover:scale-105 group-hover:border-gold"
                     />
                   ) : (
-                    <div className="w-28 h-28 rounded-full border-2 border-gold/30 mb-6 flex items-center justify-center bg-secondary">
+                    <div className="w-28 h-28 rounded-full border-2 border-gold/30 mb-6 flex items-center justify-center bg-secondary transition-transform duration-500 group-hover:scale-105">
                       <span className="font-serif text-3xl text-gold">
                         {member.name.split(" ").map((n) => n[0]).slice(0, 2).join("")}
                       </span>
