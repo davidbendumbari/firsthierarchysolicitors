@@ -173,7 +173,7 @@ const AboutPage = () => (
                   <p className="text-gold text-sm mt-1">{member.role}</p>
                   <div className="mt-4 space-y-4">
                     {member.bio.map((para, idx) => (
-                      <p key={idx} className="text-muted-foreground text-sm leading-relaxed">{para}</p>
+                      <p key={idx} className="text-muted-foreground text-sm leading-relaxed text-center">{para}</p>
                     ))}
                   </div>
                   <div className="mt-6 flex flex-wrap gap-2">
