@@ -96,7 +96,7 @@ const AboutPage = () => (
         <h1 className="font-serif text-4xl lg:text-6xl font-bold mt-4 animate-fade-up-delay-1">
           A Legacy of Legal <span className="text-gradient-gold">Excellence</span>
         </h1>
-        <p className="text-muted-foreground text-lg mt-8 leading-relaxed animate-fade-up-delay-2">
+        <p className="text-muted-foreground text-lg mt-8 leading-relaxed text-center animate-fade-up-delay-2">
           Founded in 2011 by Nafisah Abubakar, 1ST Hierarchy Solicitors is a corporate and commercial law firm based in Abuja, serving on the Board of several companies in the position of Company Secretary. Our client base spans the public sector, ICT, oil and gas, academia, financial services, engineering and construction, non-profits, entertainment, and fashion.
         </p>
       </div>
