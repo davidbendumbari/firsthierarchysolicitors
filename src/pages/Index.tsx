@@ -86,7 +86,7 @@ const Index = () => (
             </h2>
           </RevealItem>
           <RevealItem delay={300}>
-            <p className="text-muted-foreground text-lg leading-relaxed mt-8">
+            <p className="text-muted-foreground text-lg leading-relaxed mt-8 text-center">
               To provide corporate and institutional clients in Nigeria with efficient and effective legal solutions that safeguard operations and drive sustainable growth.
             </p>
           </RevealItem>
