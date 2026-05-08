@@ -160,10 +160,10 @@ const AboutPage = () => (
                     <img
                       src={member.image}
                       alt={member.name}
-                      className="w-28 h-28 rounded-full object-cover border-2 border-gold/30 mb-6"
+                      className="w-28 h-28 rounded-full object-cover border-2 border-gold/30 mb-6 mx-auto"
                     />
                   ) : (
-                    <div className="w-28 h-28 rounded-full border-2 border-gold/30 mb-6 flex items-center justify-center bg-secondary">
+                    <div className="w-28 h-28 rounded-full border-2 border-gold/30 mb-6 flex items-center justify-center bg-secondary mx-auto">
                       <span className="font-serif text-3xl text-gold">
                         {member.name.split(" ").map((n) => n[0]).slice(0, 2).join("")}
                       </span>
