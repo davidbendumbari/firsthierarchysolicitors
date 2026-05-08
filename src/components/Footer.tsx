@@ -8,9 +8,9 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="md:col-span-1">
           <div className="mb-4">
-            <img src={logo} alt="1ST Hierarchy Solicitors logo" className="h-16 w-auto object-contain" />
+            <img src={logo} alt="1ST Hierarchy Solicitors logo" className="h-16 w-auto object-contain mx-auto" />
           </div>
-          <p className="text-muted-foreground text-sm leading-relaxed mt-4">
+          <p className="text-muted-foreground text-sm leading-relaxed mt-4 text-center">
             Premier corporate and commercial law firm delivering exceptional legal solutions in Abuja, Nigeria.
           </p>
         </div>

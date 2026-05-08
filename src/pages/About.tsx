@@ -96,7 +96,7 @@ const AboutPage = () => (
         <h1 className="font-serif text-4xl lg:text-6xl font-bold mt-4 animate-fade-up-delay-1">
           A Legacy of Legal <span className="text-gradient-gold">Excellence</span>
         </h1>
-        <p className="text-muted-foreground text-lg mt-8 leading-relaxed animate-fade-up-delay-2">
+        <p className="text-muted-foreground text-lg mt-8 leading-relaxed text-center animate-fade-up-delay-2">
           Founded in 2011 by Nafisah Abubakar, 1ST Hierarchy Solicitors is a corporate and commercial law firm based in Abuja, serving on the Board of several companies in the position of Company Secretary. Our client base spans the public sector, ICT, oil and gas, academia, financial services, engineering and construction, non-profits, entertainment, and fashion.
         </p>
       </div>
@@ -113,7 +113,7 @@ const AboutPage = () => (
             <h2 className="font-serif text-3xl lg:text-5xl font-bold mt-4">Exceptional Legal Service</h2>
           </RevealItem>
           <RevealItem delay={300}>
-            <p className="text-muted-foreground text-lg mt-8 leading-relaxed">
+            <p className="text-muted-foreground text-lg mt-8 leading-relaxed text-center">
               We have a reputation for providing exceptional legal service, known for our commitment to excellence, expediency, and the ability to find innovative solutions to the most complex of legal and corporate problems. Years of working with diverse clients in the private and public sector have given us deep expertise across Engineering and Construction, ICT, Renewable Energy, Government, Financial Services, Hospitality, Agribusiness, Education, Fashion, and more.
             </p>
           </RevealItem>
@@ -160,23 +160,23 @@ const AboutPage = () => (
                     <img
                       src={member.image}
                       alt={member.name}
-                      className="w-28 h-28 rounded-full object-cover border-2 border-gold/30 mb-6"
+                      className="w-28 h-28 rounded-full object-cover border-2 border-gold/30 mb-6 mx-auto"
                     />
                   ) : (
-                    <div className="w-28 h-28 rounded-full border-2 border-gold/30 mb-6 flex items-center justify-center bg-secondary">
+                    <div className="w-28 h-28 rounded-full border-2 border-gold/30 mb-6 flex items-center justify-center bg-secondary mx-auto">
                       <span className="font-serif text-3xl text-gold">
                         {member.name.split(" ").map((n) => n[0]).slice(0, 2).join("")}
                       </span>
                     </div>
                   )}
-                  <h3 className="font-serif text-2xl font-bold group-hover:text-gold transition-colors">{member.name}</h3>
-                  <p className="text-gold text-sm mt-1">{member.role}</p>
+                  <h3 className="font-serif text-2xl font-bold group-hover:text-gold transition-colors text-center">{member.name}</h3>
+                  <p className="text-gold text-sm mt-1 text-center">{member.role}</p>
                   <div className="mt-4 space-y-4">
                     {member.bio.map((para, idx) => (
-                      <p key={idx} className="text-muted-foreground text-sm leading-relaxed">{para}</p>
+                      <p key={idx} className="text-muted-foreground text-sm leading-relaxed text-center">{para}</p>
                     ))}
                   </div>
-                  <div className="mt-6 flex flex-wrap gap-2">
+                  <div className="mt-6 flex flex-wrap gap-2 justify-center">
                     {member.specializations.map((spec) => (
                       <span key={spec} className="px-3 py-1 bg-secondary text-xs text-muted-foreground rounded-full border border-border">
                         {spec}

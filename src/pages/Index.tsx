@@ -86,7 +86,7 @@ const Index = () => (
             </h2>
           </RevealItem>
           <RevealItem delay={300}>
-            <p className="text-muted-foreground text-lg leading-relaxed mt-8">
+            <p className="text-muted-foreground text-lg leading-relaxed mt-8 text-center">
               To provide corporate and institutional clients in Nigeria with efficient and effective legal solutions that safeguard operations and drive sustainable growth.
             </p>
           </RevealItem>
@@ -140,9 +140,9 @@ const Index = () => (
                   to={service.path}
                   className="group block p-8 bg-card border border-border rounded-lg hover:border-gold/30 transition-all duration-500 h-full"
                 >
-                  <service.icon className="text-gold mb-4" size={32} />
-                  <h3 className="font-serif text-xl font-semibold mb-3 group-hover:text-gold transition-colors">{service.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{service.desc}</p>
+                  <service.icon className="text-gold mb-4 mx-auto" size={32} />
+                  <h3 className="font-serif text-xl font-semibold mb-3 group-hover:text-gold transition-colors text-center">{service.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed text-center">{service.desc}</p>
                   <span className="inline-flex items-center gap-2 text-gold text-sm mt-4 group-hover:gap-3 transition-all">
                     Learn More <ArrowRight size={14} />
                   </span>
@@ -162,7 +162,7 @@ const Index = () => (
       </div>
       <div className="container mx-auto px-6 text-center relative z-10">
         <h2 className="font-serif text-3xl lg:text-5xl font-bold">Let Us Help</h2>
-        <p className="text-muted-foreground text-lg mt-6 max-w-2xl mx-auto">
+        <p className="text-muted-foreground text-lg mt-6 max-w-2xl mx-auto text-center">
           Partner with 1ST Hierarchy Solicitors and experience the confidence that comes with world-class legal representation.
         </p>
         <div className="flex flex-wrap justify-center gap-4 mt-10">

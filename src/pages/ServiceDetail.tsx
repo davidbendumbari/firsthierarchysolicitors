@@ -180,9 +180,9 @@ const ServiceDetailPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16">
               {service.features.map((f, i) => (
                 <RevealItem key={f.title} delay={i * 100}>
-                  <div className="p-6 bg-card border border-border rounded-lg h-full hover:border-gold/30 transition-all duration-500">
-                    <h3 className="font-serif text-lg font-semibold mb-2">{f.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{f.desc}</p>
+                  <div className="p-6 bg-card border border-border rounded-lg h-full hover:border-gold/30 transition-all duration-500 text-center">
+                    <h3 className="font-serif text-lg font-semibold mb-2 text-center">{f.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed text-center">{f.desc}</p>
                   </div>
                 </RevealItem>
               ))}
