@@ -10,7 +10,7 @@ const Footer = () => (
           <div className="mb-4">
             <img src={logo} alt="1ST Hierarchy Solicitors logo" className="h-16 w-auto object-contain" />
           </div>
-          <p className="text-muted-foreground text-sm leading-relaxed mt-4">
+          <p className="text-muted-foreground text-sm leading-relaxed mt-4 text-center">
             Premier corporate and commercial law firm delivering exceptional legal solutions in Abuja, Nigeria.
           </p>
         </div>
