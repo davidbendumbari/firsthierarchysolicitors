@@ -99,16 +99,16 @@ const ServicesPage = () => (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <RevealItem delay={400}>
               <div className="p-8 bg-card border border-border rounded-lg h-full">
-                <h3 className="font-serif text-xl font-semibold mb-3">Retainers</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <h3 className="font-serif text-xl font-semibold mb-3 text-center">Retainers</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed text-center">
                   A fixed periodic fee, paid monthly, quarterly, or yearly, under either a global retainer covering all aspects of your legal work, or a specific retainer covering identified areas. Calculated to equate to the average value of work over time, smoothing peaks and troughs and giving you budgeting certainty.
                 </p>
               </div>
             </RevealItem>
             <RevealItem delay={500}>
               <div className="p-8 bg-card border border-border rounded-lg h-full">
-                <h3 className="font-serif text-xl font-semibold mb-3">Fixed Fees</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <h3 className="font-serif text-xl font-semibold mb-3 text-center">Fixed Fees</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed text-center">
                   We will quote and stick to a fixed fee for any transaction or piece of legal work at your request, giving you full clarity on cost before we begin.
                 </p>
               </div>
