@@ -169,8 +169,8 @@ const AboutPage = () => (
                       </span>
                     </div>
                   )}
-                  <h3 className="font-serif text-2xl font-bold group-hover:text-gold transition-colors">{member.name}</h3>
-                  <p className="text-gold text-sm mt-1">{member.role}</p>
+                  <h3 className="font-serif text-2xl font-bold group-hover:text-gold transition-colors text-center">{member.name}</h3>
+                  <p className="text-gold text-sm mt-1 text-center">{member.role}</p>
                   <div className="mt-4 space-y-4">
                     {member.bio.map((para, idx) => (
                       <p key={idx} className="text-muted-foreground text-sm leading-relaxed text-center">{para}</p>
