@@ -113,7 +113,7 @@ const AboutPage = () => (
             <h2 className="font-serif text-3xl lg:text-5xl font-bold mt-4">Exceptional Legal Service</h2>
           </RevealItem>
           <RevealItem delay={300}>
-            <p className="text-muted-foreground text-lg mt-8 leading-relaxed">
+            <p className="text-muted-foreground text-lg mt-8 leading-relaxed text-center">
               We have a reputation for providing exceptional legal service, known for our commitment to excellence, expediency, and the ability to find innovative solutions to the most complex of legal and corporate problems. Years of working with diverse clients in the private and public sector have given us deep expertise across Engineering and Construction, ICT, Renewable Energy, Government, Financial Services, Hospitality, Agribusiness, Education, Fashion, and more.
             </p>
           </RevealItem>
