@@ -69,8 +69,8 @@ const ServicesPage = () => (
                 >
                   <service.icon className="text-gold shrink-0 mt-1" size={36} />
                   <div>
-                    <h3 className="font-serif text-xl font-semibold group-hover:text-gold transition-colors">{service.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed mt-2">{service.desc}</p>
+                    <h3 className="font-serif text-xl font-semibold group-hover:text-gold transition-colors text-center">{service.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed mt-2 text-center">{service.desc}</p>
                     <span className="inline-flex items-center gap-2 text-gold text-sm mt-4 group-hover:gap-3 transition-all">
                       Learn More <ArrowRight size={14} />
                     </span>
