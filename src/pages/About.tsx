@@ -176,7 +176,7 @@ const AboutPage = () => (
                       <p key={idx} className="text-muted-foreground text-sm leading-relaxed text-center">{para}</p>
                     ))}
                   </div>
-                  <div className="mt-6 flex flex-wrap gap-2">
+                  <div className="mt-6 flex flex-wrap gap-2 justify-center">
                     {member.specializations.map((spec) => (
                       <span key={spec} className="px-3 py-1 bg-secondary text-xs text-muted-foreground rounded-full border border-border">
                         {spec}
