@@ -162,7 +162,7 @@ const Index = () => (
       </div>
       <div className="container mx-auto px-6 text-center relative z-10">
         <h2 className="font-serif text-3xl lg:text-5xl font-bold">Let Us Help</h2>
-        <p className="text-muted-foreground text-lg mt-6 max-w-2xl mx-auto">
+        <p className="text-muted-foreground text-lg mt-6 max-w-2xl mx-auto text-center">
           Partner with 1ST Hierarchy Solicitors and experience the confidence that comes with world-class legal representation.
         </p>
         <div className="flex flex-wrap justify-center gap-4 mt-10">
