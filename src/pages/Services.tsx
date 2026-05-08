@@ -65,9 +65,9 @@ const ServicesPage = () => (
               <RevealItem key={service.title} delay={i * 100}>
                 <Link
                   to={service.path}
-                  className="group flex gap-6 p-8 bg-card border border-border rounded-lg hover:border-gold/30 transition-all duration-500 h-full"
+                  className="group flex flex-col items-center gap-6 p-8 bg-card border border-border rounded-lg hover:border-gold/30 transition-all duration-500 h-full"
                 >
-                  <service.icon className="text-gold shrink-0 mt-1" size={36} />
+                  <service.icon className="text-gold shrink-0 mt-1 mx-auto" size={36} />
                   <div>
                     <h3 className="font-serif text-xl font-semibold group-hover:text-gold transition-colors text-center">{service.title}</h3>
                     <p className="text-muted-foreground text-sm leading-relaxed mt-2 text-center">{service.desc}</p>
