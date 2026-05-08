@@ -140,9 +140,9 @@ const Index = () => (
                   to={service.path}
                   className="group block p-8 bg-card border border-border rounded-lg hover:border-gold/30 transition-all duration-500 h-full"
                 >
-                  <service.icon className="text-gold mb-4" size={32} />
-                  <h3 className="font-serif text-xl font-semibold mb-3 group-hover:text-gold transition-colors">{service.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{service.desc}</p>
+                  <service.icon className="text-gold mb-4 mx-auto" size={32} />
+                  <h3 className="font-serif text-xl font-semibold mb-3 group-hover:text-gold transition-colors text-center">{service.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed text-center">{service.desc}</p>
                   <span className="inline-flex items-center gap-2 text-gold text-sm mt-4 group-hover:gap-3 transition-all">
                     Learn More <ArrowRight size={14} />
                   </span>
