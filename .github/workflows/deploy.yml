@@ -29,8 +29,30 @@ jobs:
       - name: Build (Vite + React + TypeScript)
         run: npm run build
 
-      - name: Copy index.html to 404.html for SPA routing
-        run: cp ./dist/index.html ./dist/404.html
+      - name: Create SPA 404 redirect
+        run: |
+          cat > ./dist/404.html << 'EOF'
+          <!DOCTYPE html>
+          <html>
+            <head>
+              <script>
+                var l = window.location;
+                l.replace(
+                  l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+                  l.pathname.split('/').slice(0, 1 + 1).join('/') + '/?p=' +
+                  l.pathname.slice(1).split('/').slice(1).join('/').replace(/&/g, '~and~') +
+                  (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+                  l.hash
+                );
+              </script>
+            </head>
+            <body></body>
+          </html>
+          EOF
+
+      - name: Add redirect script to index.html
+        run: |
+          sed -i 's|<head>|<head><script>var p=window.location.search[1];if(p!==undefined){var q=p.slice(2).replace(/~and~/g,"\&");window.history.replaceState(null,null,window.location.pathname.slice(0,-1)+(q?"?"+q:"")+(window.location.hash||""))}</script>|' ./dist/index.html
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v3
