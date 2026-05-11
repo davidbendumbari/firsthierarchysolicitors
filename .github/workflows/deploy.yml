@@ -39,7 +39,7 @@ jobs:
                 var l = window.location;
                 l.replace(
                   l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-                  l.pathname.split('/').slice(0, 1 + 1).join('/') + '/?p=' +
+                  l.pathname.split('/').slice(0, 2).join('/') + '/?p=' +
                   l.pathname.slice(1).split('/').slice(1).join('/').replace(/&/g, '~and~') +
                   (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
                   l.hash
@@ -50,9 +50,17 @@ jobs:
           </html>
           EOF
 
-      - name: Add redirect script to index.html
+      - name: Inject redirect handler into index.html
         run: |
-          sed -i 's|<head>|<head><script>var p=window.location.search[1];if(p!==undefined){var q=p.slice(2).replace(/~and~/g,"\&");window.history.replaceState(null,null,window.location.pathname.slice(0,-1)+(q?"?"+q:"")+(window.location.hash||""))}</script>|' ./dist/index.html
+          python3 - << 'EOF'
+          with open('./dist/index.html', 'r') as f:
+              content = f.read()
+          script = '<script>var p=window.location.search[1];if(p!==undefined){var q=p.slice(2).replace(/~and~/g,"&");window.history.replaceState(null,null,window.location.pathname.slice(0,-1)+(q?"?"+q:"")+(window.location.hash||""));}</script>'
+          content = content.replace('<head>', '<head>' + script, 1)
+          with open('./dist/index.html', 'w') as f:
+              f.write(content)
+          print("Done - redirect script injected into index.html")
+          EOF
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v3
