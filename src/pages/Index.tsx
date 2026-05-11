@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { RevealSection, RevealItem } from "@/hooks/useScrollReveal";
 import { Building2, Briefcase, HardHat, Home, Scale, Calculator, ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-abuja.webp";
+import heroImage from "@/assets/hero-abuja.jpg";
 
 const services = [
   { icon: Building2, title: "Corporate", desc: "Acquisitions, mergers, capital raising, governance, company secretarial and corporate advisory.", path: "/services/corporate" },
@@ -19,7 +19,7 @@ const Index = () => (
     {/* Hero */}
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={heroImage} alt="Abuja skyline" className="w-full h-full object-cover" />
+        <img src={heroImage} alt="Abuja skyline" className="w-full h-full object-cover" loading="eager" fetchPriority="high" decoding="async" />
         <div className="absolute inset-0 bg-background/60" />
         <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-transparent" />
       </div>
