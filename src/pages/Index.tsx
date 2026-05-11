@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { RevealSection, RevealItem } from "@/hooks/useScrollReveal";
 import { Building2, Briefcase, HardHat, Home, Scale, Calculator, ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-abuja.jpg";
+import heroImage from "@/assets/hero-abuja-new.webp";
 
 const services = [
   { icon: Building2, title: "Corporate", desc: "Acquisitions, mergers, capital raising, governance, company secretarial and corporate advisory.", path: "/services/corporate" },
